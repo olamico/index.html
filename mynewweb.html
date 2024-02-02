@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My New Web
+        </title>
+        <link rel="stylesheet" href="mynewweb.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Product" >Product</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li class="topnav-right"><a href="#Signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="#Signin">Sign In</a>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);"onclick="dropdownMenu()">&#9776;</a></li>
+            </ul> 
+         </nav> 
+<div class="container" id="section-1-gradient">
+    <div class="row">
+        <div class="col-6">
+        <div class="leftside-col">
+            <h1 class="large">Soolworld Fragrance</h1>
+            <h1 class="large">No.1 perfume store in Ife</h1>
+        </div>
+            <form>
+            <div class="leftside-col">
+                <h2>Username</h2>
+                <input type="text" name="Username" placeholder="username">
+                <h2>Password</h2>
+                <input type="text" name="Password" placeholder="password">
+            </div>
+            </form>
+        </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer">
+                    <iframe width="560" height="315" src="gift.mp4" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div> 
+
+<header> 
+    <h1 class="section2Header">New Perfume Combos</h1>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img width="100" height="100" src="sugarbaby.jpg" alt="">
+                </div>
+                <label>Sugar Baby</label>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img width="100" height="100" src="berryweekend.jpg" alt="">
+                </div>
+                <label>Berryweekend</label>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img width="100" height="100" src="oniro.jpg" alt="">
+                </div>                <label>Oniro</label>
+                <p>Berryweekend 250ml spray, Berryweekend 25ml perfume and 20ml pocket perfume</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+       <script>
+            function dropdownMenu() {
+                var x = document.getElementById ("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else {
+                    x.className = "topnav"
+                }
+            }
+         </script> 
+     </body>
+</html>
